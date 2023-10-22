@@ -7,7 +7,7 @@
 
 int main()
 {
-  int N = 1000;
+  int N = 1000000;
   double *a;
 
   a = malloc(N*MAX_STRIDE*sizeof(double));
@@ -16,11 +16,6 @@ int main()
 
   for (int i = 0; i < N*MAX_STRIDE; i++)
     a[i] = rand()%100 + 1.0;
-  
-  /*for (int i = 0; i < N*MAX_STRIDE; i++)
-    printf("%f \t", a[i]);
-    
-  printf("\n");*/
   
       
   printf("stride , mean, time (msec), rate (MB/s)\n"); 
